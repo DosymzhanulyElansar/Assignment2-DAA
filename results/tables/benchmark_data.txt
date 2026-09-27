@@ -1,0 +1,23 @@
+--- Workload 1: Random Access (get) ---
+N=   100 | DA Time:     182960 ns, Accesses:    10000 | LL Time:     704380 ns, Accesses:     254380
+N=  1000 | DA Time:      36220 ns, Accesses:    10000 | LL Time:    2530420 ns, Accesses:    2495234
+N= 10000 | DA Time:      20740 ns, Accesses:    10000 | LL Time:   28886120 ns, Accesses:   25055596
+N=100000 | DA Time:      29720 ns, Accesses:    10000 | LL Time:  420732100 ns, Accesses:  250442582
+
+--- Workload 2: Search (contains) ---
+N=   100 | DA Search Time:     638240 ns, Comp:     100000 | LL Search Time:     492140 ns, Comp:     100000
+N=  1000 | DA Search Time:    1190260 ns, Comp:    1000000 | LL Search Time:    2246140 ns, Comp:    1000000
+N= 10000 | DA Search Time:    2059800 ns, Comp:   10000000 | LL Search Time:   19229460 ns, Comp:   10000000
+N=100000 | DA Search Time:   20796140 ns, Comp:  100000000 | LL Search Time:  289249300 ns, Comp:  100000000
+
+--- Workload 3: Insertion and Removal at Index 0 ---
+N=   100 | DA Insert(0):      90340 ns | LL Insert(0):    25140 ns | DA Remove(0):      79500 ns | LL Remove(0):    30820 ns
+N=  1000 | DA Insert(0):     149500 ns | LL Insert(0):    23300 ns | DA Remove(0):     115780 ns | LL Remove(0):    16260 ns
+N= 10000 | DA Insert(0):     538220 ns | LL Insert(0):    16100 ns | DA Remove(0):     507460 ns | LL Remove(0):    11580 ns
+N=100000 | DA Insert(0):    6265880 ns | LL Insert(0):     3740 ns | DA Remove(0):    6296580 ns | LL Remove(0):     3840 ns
+
+--- Workload 4: Priority Processing (Min-Heap) ---
+N=   100 | Heap Insert Total:      13580 ns | Heap Extract Total:      37200 ns | Comparisons:       1053
+N=  1000 | Heap Insert Total:      39420 ns | Heap Extract Total:      89340 ns | Comparisons:      17240
+N= 10000 | Heap Insert Total:     214720 ns | Heap Extract Total:     638760 ns | Comparisons:     239283
+N=100000 | Heap Insert Total:    1377920 ns | Heap Extract Total:    7286600 ns | Comparisons:    3059792
